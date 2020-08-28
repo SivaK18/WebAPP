@@ -87,16 +87,3 @@ love {
   top: 50%;
   transform: translate(-85px, -85px);
 }
-
-p {
-  color: #323232;
-  font-family: 'Open Sans';
-  font-size: 12px;
-  left: 20px;
-  position: relative;
-  text-decoration: none;
-  top: 200px;
-}
-p:hover {
-  color: #c7c7c7;
-}
