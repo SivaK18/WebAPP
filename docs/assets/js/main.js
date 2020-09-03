@@ -281,11 +281,11 @@
 /* 11. Datepicker */
     
 // 11. ---- Mailchimp js --------//  
-    function mailChimp() {
+  /*  function mailChimp() {
       $('#mc_embed_signup').find('form').ajaxChimp();
     }
     mailChimp();
-
+*/
 
 // 12 Pop Up Img
     var popUp = $('.single_gallery_part, .img-pop-up');
