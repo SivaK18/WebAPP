@@ -7,7 +7,7 @@
         <meta name="description" content="Greet and propose | Chat | Play games | And love and love and love! Only with TAM.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.ico">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -27,11 +27,16 @@
             <link rel="stylesheet" href="./assets/css/owl.theme.green.min.css">
 
     <style>
+        @media(max-width: 850px){
         .single-slider{
-            min-height: 100vh !important;
-            max-height: 100vh !important;
+            min-height: max(100vh, 70vw) !important;
+        }}
+        .single-slider{
+            min-height: 100vh;
+            max-height: 200vh !important;
             padding-top: 2vh !important;
         }
+
         .footer-area{
         background: #222222;
         }
@@ -46,7 +51,7 @@
             text-align: center;
         }
         .features-caption p, .service-cap p{
-            text-align: justify;
+            text-align: center;
         }
         
     .single-feature{
@@ -57,6 +62,19 @@
 	}
 	.section-gap {
     padding: 5vh 5vh 5vh 4vh !important;
+}
+
+.applic-apps .owl-carousel .owl-item img{
+    height: 73vh !important;
+    width: 37.87vh !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.w-img{
+    height: max(6vh,6vw);
+}
+.header-area .slicknav_btn {
+    top: min(-6vw,-6vh) !important;
 }
     </style>
    </head>
@@ -95,7 +113,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-2">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/img/TAM2.png" alt=""></a>
+                                <a href="#"><img class="w-img" src="assets/img/img/Untitled-1.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
@@ -103,7 +121,7 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="#">Home</a></li>
                                         <li><a href="#Features">Features</a></li>
                                         <li><a href="#Services">Services</a></li>
                                         <li><a href="#Screenshots">Screenshots</a></li>
@@ -138,7 +156,7 @@
                 <div class="single-slider slider-height slider-padding sky-blue d-flex align-items-center">
                     <div class="container">
                         <div class="row d-flex align-items-center">
-                            <div class="col-lg-6 col-md-9 ">
+                            <div class="col-lg-6 col-md-12 ">
                                 <div class="hero__caption text-center">
                                     <span data-animation="fadeInUp" data-delay=".4s">Greet | Propose | Chat | Play games | Love and love and love </span>
                                     <h1 data-animation="fadeInUp" data-delay=".6s">Develop your love profile with TAM! </h1>
@@ -151,7 +169,7 @@
                                     </div>  
                                     <div class="slider-btns">
                                         <!-- Video Btn -->
-                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><i class="fa  fa-youtube-play"></i></a>
+                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn play-btn" href="https://www.youtube.com/watch?v=nPV3joEfLqo"><i class="fa  fa-youtube-play"></i></a>
                                    </div>
                                 </div>
                             </div>
@@ -177,7 +195,7 @@
                                         <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn radius-btn"><i class="fa fa-android"></i> &nbsp; Download</a>
                                         <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn radius-btn"><i class="fa fa-apple"></i> &nbsp; Download</a>
                                         <!-- Video Btn -->
-                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><i class="fa  fa-youtube-play"></i></a>
+                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn play-btn" href="https://www.youtube.com/watch?v=nPV3joEfLqo"><i class="fa  fa-youtube-play"></i></a>
                                    </div>
                                 </div>
                             </div>
@@ -652,8 +670,8 @@
         <!-- <script src="./assets/js/gijgo.min.js"></script> -->
 		<!-- One Page, Animated-HeadLin -->
         <!-- <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>  -->
+		<script src="./assets/js/animated.headline.js"></script>-->
+        <script src="./assets/js/jquery.magnific-popup.js"></script>  
  
 		<!-- Scrollup, nice-select, sticky -->
         <script src="./assets/js/jquery.scrollUp.min.js"></script>
