@@ -298,7 +298,10 @@
         });
       }
 
-
+// tilt JS
+$('.single-feature').tilt({
+  maxTilt: 9,
+});
 
 
 })(jQuery);
