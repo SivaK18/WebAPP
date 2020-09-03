@@ -302,6 +302,13 @@
 $('.single-feature').tilt({
   maxTilt: 9,
 });
-
+//youtube play
+$('.play-btn').magnificPopup({
+  type: 'iframe',
+  mainClass: 'mfp-fade',
+  removalDelay: 160,
+  preloader: false,
+  fixedContentPos: false
+});
 
 })(jQuery);
