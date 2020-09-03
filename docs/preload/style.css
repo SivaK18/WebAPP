@@ -44,7 +44,7 @@ heart div.beat {
 heart left {
   height: 100px;
   width: 100px;
-  background: #bd1521;
+  background: #ff3789;
   border-radius: 100%;
   content: '';
   display: block;
@@ -52,7 +52,7 @@ heart left {
 heart right {
   height: 100px;
   width: 100px;
-  background: #bd1521;
+  background: #ff3789;
   border-radius: 100%;
   content: '';
   display: block;
@@ -61,7 +61,7 @@ heart right {
 heart bottom {
   height: 100px;
   width: 100px;
-  background: #bd1521;
+  background: #ff3789;
   border-bottom-right-radius: 10px;
   content: '';
   display: block;
