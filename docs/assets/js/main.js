@@ -197,33 +197,38 @@
 
 
 /* 5.  Applic App */
+    var width = window.innerWidth;
+    console.log(width);
     var client_list = $('.app-active');
     if(client_list.length){
       client_list.owlCarousel({
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        slideTransition: 'linear',
         loop: true,
         autoplay:true,
-        speed: 3000,
-        smartSpeed:2000,
-        dots: true,
-        margin: 15,
+        speed: 6000,
+        //smartSpeed: 3900,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 5000,
+        dots: false,
+        margin: 0,
         nav  : false,
         navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
-        autoplayHoverPause: true,
+        autoplayHoverPause: false,
         responsive : {
           0 : {
             items: 1
           },
-          768 : {
+          width : {
             items: 2
-          },
+          }/*,
           992 : {
             items: 2
           },
           1200:{
             items: 4
-          }
+          }*/
         }
       });
     }
