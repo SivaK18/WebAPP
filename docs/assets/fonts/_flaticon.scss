@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 03/09/2020 08:39
+    Creation date: 04/09/2020 14:47
     */
 
     @font-face {
@@ -44,6 +44,9 @@
 .flaticon-handsome:before { content: "\f104"; }
 .flaticon-message:before { content: "\f105"; }
 .flaticon-template:before { content: "\f106"; }
+.flaticon-apple:before { content: "\f107"; }
+.flaticon-video:before { content: "\f108"; }
+.flaticon-play:before { content: "\f109"; }
     
     $font-Flaticon-emotion: "\f100";
     $font-Flaticon-greeting-card: "\f101";
@@ -52,3 +55,6 @@
     $font-Flaticon-handsome: "\f104";
     $font-Flaticon-message: "\f105";
     $font-Flaticon-template: "\f106";
+    $font-Flaticon-apple: "\f107";
+    $font-Flaticon-video: "\f108";
+    $font-Flaticon-play: "\f109";
