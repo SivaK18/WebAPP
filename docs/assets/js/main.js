@@ -220,7 +220,7 @@
           0 : {
             items: 1
           },
-          width : {
+          $width : {
             items: 2
           }/*,
           992 : {
