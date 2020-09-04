@@ -25,9 +25,10 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: max(5vw,5vh);
+  font-size: max(5vh,4vw);
 font-style: normal;
-margin-left: 0px;
+top: max(0.5vh,0vw);
+position: relative;
 }
 
 .flaticon-emotion:before { content: "\f100"; }
