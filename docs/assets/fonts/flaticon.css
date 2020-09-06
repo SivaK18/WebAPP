@@ -26,9 +26,8 @@
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
   font-size: max(5vh,4vw);
-font-style: normal;
-top: max(0.5vh,0vw);
-position: relative;
+  font-style: normal;
+  position: relative;
 }
 
 .flaticon-emotion:before { content: "\f100"; }
