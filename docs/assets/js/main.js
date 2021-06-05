@@ -3,11 +3,15 @@
   
 /* 1. Proloder */
     $(window).on('load', function () {
+      block(()=>loadPage())
+    });
+
+    function loadPage() {
       $('#preloader-active').delay(450).fadeOut('slow');
       $('body').delay(450).css({
         'overflow': 'visible'
       });
-    });
+    }
 
 
 /* 2. slick Nav */
@@ -302,6 +306,28 @@
           }
         });
       }
+
+// block app store for locations
+function block(_callback) {
+  console.log("Trying to block location")
+  $(".apple-btn").addClass('d-none');
+  $.get("https://api.ipify.org/", function(ipAddress, status){
+    console.log("ipAddress: " + ipAddress + "\nstatus: " + status)
+    if(status == "success") {
+      $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://api.ipgeolocationapi.com/geolocate/'+ipAddress), function (data) {
+          var country = JSON.parse(data.contents).name
+          console.log("country: " + country);
+          //if country India hide appstore
+          if(country.toUpperCase() != 'india'.toUpperCase()) {
+            console.log('Country is not India')
+            $(".apple-btn").removeClass('d-none');
+          }
+      });
+    }
+  });
+  $(".buttons").removeClass('d-none');
+  _callback()
+}
 
 // tilt JS
 $('.single-feature').tilt({
